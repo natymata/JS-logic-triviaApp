@@ -1,0 +1,765 @@
+/*
+########    #######   ##    ##   ########    ######    
+##         ##     ##  ###   ##      ##      ##    ##   
+##         ##     ##  ####  ##      ##      ##         
+######     ##     ##  ## ## ##      ##       ######    
+##         ##     ##  ##  ####      ##            ##   
+##         ##     ##  ##   ###      ##      ##    ##   
+##          #######   ##    ##      ##       ######    
+*/
+
+/*
+
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Abel', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+/*
+########   ########    ######    ########   ########   
+##     ##  ##         ##    ##   ##            ##      
+##     ##  ##         ##         ##            ##      
+########   ######      ######    ######        ##      
+##   ##    ##               ##   ##            ##      
+##    ##   ##         ##    ##   ##            ##      
+##     ##  ########    ######    ########      ##      
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	width: 960px;
+	margin:10px auto;
+}
+
+label,input{
+	display:block;
+}
+
+
+/*
+########   ########    ######    ########   ########   
+##     ##  ##         ##    ##   ##            ##      
+##     ##  ##         ##         ##            ##      
+########   ######      ######    ######        ##      
+##   ##    ##               ##   ##            ##      
+##    ##   ##         ##    ##   ##            ##      
+##     ##  ########    ######    ########      ##      
+*/
+
+
+html {
+	font-size: 100%;
+	background: url('../images/4UIO0Vq.png');
+	background-repeat: repeat-y repeat-x;
+}
+
+body {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; 
+	color: #FFB03B;
+	overflow:hidden;
+}
+
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+
+
+input:focus {
+   outline: none;
+   border: specify yours;
+}
+
+
+/*
+ ######    ##          #######   ########      ###     ##         
+##    ##   ##         ##     ##  ##     ##    ## ##    ##         
+##         ##         ##     ##  ##     ##   ##   ##   ##         
+##   ####  ##         ##     ##  ########   ##     ##  ##         
+##    ##   ##         ##     ##  ##     ##  #########  ##         
+##    ##   ##         ##     ##  ##     ##  ##     ##  ##         
+ ######    ########    #######   ########   ##     ##  ########   
+*/
+
+
+.main-content {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 5.202em;
+	background: rgba(94, 90, 89, .95);
+	padding: 40px 60px;	
+	border-radius: 20px;
+	
+	-webkit-animation-name: ride;
+	-moz-animation-name: ride;
+	-o-animation-name: ride;
+	animation-name: ride;
+	
+	-webkit-animation-duration: .5s;
+	-moz-animation-duration: .5s;
+	animation-duration: .5s;
+	-o-animation-duration: .5s;
+	animation-duration: .5s;
+	
+	-webkit-animation-timing-function: ease-in;
+	-moz-animation-timing-function: ease-in;
+	-o-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+			
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-o-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+
+}
+
+
+
+@-webkit-keyframes ride {
+	from{-webkit-transform: translateY(-500px);transform: translateY(-500px);}
+	to{-webkit-transform: translateY(83px);transform: translateY(83px);}
+}
+
+@-moz-keyframes ride {
+	from{-moz-transform: translateY(-500px);transform: translateY(-500px);}
+	to{-moz-transform: translateY(83px);transform: translateY(83px);}
+}
+
+@-o-keyframes ride {
+	from{-o-transform: translateY(-500px);transform: translateY(-500px);}
+	to{-o-transform: translateY(83px);transform: translateY(83px);}
+}
+
+@-keyframes ride {
+	from{transform: translateY(-500px);} 
+	to{transform: translateY(83px);}
+}
+
+
+
+
+
+
+.leftContent {
+	width: 500px;
+}
+
+
+
+
+
+.control-group{
+	/*esta clase esta agregada desde js a cada div contenerdor de cada pregunta con sus respectivas respuesta por si tiene que agregarle algo a los div o asi*/
+}
+
+.question-label{
+	/*agregada desde js a los labels que muestran la pregunta por si les quiere dar un formato especial*/
+	color:blue;
+	font-size: 18px;
+}
+
+#btnSubmit{
+	width:100px;
+	height: 25px;
+	
+}
+
+
+h1 {
+	font-family: 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	font-size: 4.11em;
+	line-height: 1.6em;
+	letter-spacing: 5px;
+}
+
+
+label {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; 
+	font-weight: 300;
+	font-size: 1.7em;
+	margin-bottom: .5em;
+	display: block;
+}
+
+
+input[type="text"] {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; 
+	height: 45px;
+	padding: 0 10px;
+	font-size: 1.5em;
+	letter-spacing: 5px;
+	margin-bottom: .8em;
+}
+
+
+input[type="button"] {
+	width: 263px;
+	height: 45px;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+
+.welcomeContent input[type="button"] {
+	border: none;
+	background: #FF2D00;
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: 300;
+	letter-spacing: 5px;
+}
+
+
+.welcomeContent input[type="button"]:hover {
+	background: rgba(146, 205, 207, .5);
+	color: #fff;
+}
+
+
+
+.welcomeContent p {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; 
+	font-size: 2em;
+	color: #FF2D00;
+	margin-top: 1em;
+	font-style: italic;
+	font-weight: 900;
+}
+
+.gameOptions input[type="button"] {
+	width: 350px;
+	margin-top: 1em;
+}
+
+.gameOptions input[type="button"] {
+	border: none;
+	background: #92CDCF;
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: 300;
+	letter-spacing: 5px;
+	border-radius: 3px;
+}
+
+
+.gameOptions input[type="button"]:hover {
+	background: rgba(220, 53, 34, .8);
+}
+
+
+.gameOptions h3 {
+	margin-top: 1em;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+
+/*
+########      ###     ########   ####   #######   
+##     ##    ## ##    ##     ##   ##   ##     ##  
+##     ##   ##   ##   ##     ##   ##   ##     ##  
+########   ##     ##  ##     ##   ##   ##     ##  
+##   ##    #########  ##     ##   ##   ##     ##  
+##    ##   ##     ##  ##     ##   ##   ##     ##  
+##     ##  ##     ##  ########   ####   #######   
+*/
+
+.questionOptions h3 {
+	margin-top: 1em;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+
+
+[type="radio"] {
+    display:none;
+}
+
+[type="radio"] + label {
+   display: block;
+   padding-left: 45px;
+   position: relative;
+  
+   line-height: 18px;
+   font-size: 1.5em;
+   color: #fff;
+   font-weight: bold;
+   margin-top: 30px;
+   padding-top: 10px;
+   font-weight: 300;
+}
+
+[type="radio"] + label:before{
+    content:'';
+    width: 30px;  
+    height: 30px;  
+  
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottom: 1px; 
+    top: 1px; 
+    background-color: #B64926;  
+    
+    
+  
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+[type="radio"]:checked + label:before{
+    content: "\2022";  
+    color: #FFF0A5;  
+    font-size: 40px;  
+    text-align: center;  
+    line-height: 25px;   
+}
+
+/*
+########      ###     ########   ####   #######   
+##     ##    ## ##    ##     ##   ##   ##     ##  
+##     ##   ##   ##   ##     ##   ##   ##     ##  
+########   ##     ##  ##     ##   ##   ##     ##  
+##   ##    #########  ##     ##   ##   ##     ##  
+##    ##   ##     ##  ##     ##   ##   ##     ##  
+##     ##  ##     ##  ########   ####   #######   
+*/
+
+
+/*
+ #######   ##     ##  ########    ######    ########   ####   #######   ##    ##    ######    
+##     ##  ##     ##  ##         ##    ##      ##       ##   ##     ##  ###   ##   ##    ##   
+##     ##  ##     ##  ##         ##            ##       ##   ##     ##  ####  ##   ##         
+##     ##  ##     ##  ######      ######       ##       ##   ##     ##  ## ## ##    ######    
+##  ## ##  ##     ##  ##               ##      ##       ##   ##     ##  ##  ####         ##   
+##    ##   ##     ##  ##         ##    ##      ##       ##   ##     ##  ##   ###   ##    ##   
+ ##### ##   #######   ########    ######       ##      ####   #######   ##    ##    ######    
+*/
+
+.formHeader p {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; 
+	font-size: 1.3em;
+	color: #EFC94C;
+	line-height: 1.5em;
+	letter-spacing: 2px;
+}
+
+.questForm p {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; 
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-top: 1em;
+	color: #FFF;
+	margin-bottom: 1em;
+	letter-spacing: 2px;
+	line-height: 1.1em;
+}
+
+
+.questForm {
+	margin-top: 1.2em;
+}
+
+.questForm legend {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; 
+	font-size: 2.2em;
+	margin-top: .5em;
+	font-weight: 700;
+	font-style: italic;
+	color: #fff;
+	letter-spacing: 4px;
+}
+
+.questForm input[type="button"] {
+	margin-top: .7em;
+	-webkit-border-radius: 10px;
+	        border-radius: 10px;
+	    border: none;
+	    height: 50px;
+	    color: #FFF;
+	    background: #79BD8F;
+	    font-size: 1.1em;
+	    width: 100%;
+}
+
+
+#p-Result {
+	font-size: 3em;
+	line-height: 1.5em;
+	letter-spacing: 3px;
+	color: #FFD393;
+}
+
+
+/*
+   ###     ##    ##   ####  ##     ##     ###     ########   ####   #######   ##    ##    ######    
+  ## ##    ###   ##    ##   ###   ###    ## ##       ##       ##   ##     ##  ###   ##   ##    ##   
+ ##   ##   ####  ##    ##   #### ####   ##   ##      ##       ##   ##     ##  ####  ##   ##         
+##     ##  ## ## ##    ##   ## ### ##  ##     ##     ##       ##   ##     ##  ## ## ##    ######    
+#########  ##  ####    ##   ##     ##  #########     ##       ##   ##     ##  ##  ####         ##   
+##     ##  ##   ###    ##   ##     ##  ##     ##     ##       ##   ##     ##  ##   ###   ##    ##   
+##     ##  ##    ##   ####  ##     ##  ##     ##     ##      ####   #######   ##    ##    ######    
+*/
+
+
+
+
+/*
+########    #######   ##     ##  ##    ##    ######    ########   ########    #######   ##      ## ##    ##   
+##     ##  ##     ##  ##     ##  ###   ##   ##    ##   ##         ##     ##  ##     ##  ##  ##  ## ###   ##   
+##     ##  ##     ##  ##     ##  ####  ##   ##         ##         ##     ##  ##     ##  ##  ##  ## ####  ##   
+########   ##     ##  ##     ##  ## ## ##   ##         ######     ##     ##  ##     ##  ##  ##  ## ## ## ##   
+##     ##  ##     ##  ##     ##  ##  ####   ##         ##         ##     ##  ##     ##  ##  ##  ## ##  ####   
+##     ##  ##     ##  ##     ##  ##   ###   ##    ##   ##         ##     ##  ##     ##  ##  ##  ## ##   ###   
+########    #######    #######   ##    ##    ######    ########   ########    #######    ###  ###  ##    ##   
+*/
+
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 2.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 2.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+
+      -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+
+
+}
+
+
+
+
+
+
+
+
+
+/*
+########    #######   ##     ##  ##    ##    ######    ########   ##     ##  ########   
+##     ##  ##     ##  ##     ##  ###   ##   ##    ##   ##         ##     ##  ##     ##  
+##     ##  ##     ##  ##     ##  ####  ##   ##         ##         ##     ##  ##     ##  
+########   ##     ##  ##     ##  ## ## ##   ##         ######     ##     ##  ########   
+##     ##  ##     ##  ##     ##  ##  ####   ##         ##         ##     ##  ##         
+##     ##  ##     ##  ##     ##  ##   ###   ##    ##   ##         ##     ##  ##         
+########    #######    #######   ##    ##    ######    ########    #######   ##         
+*/
+
+
+
+
+
+
+
+
+@-webkit-keyframes bounceInUp {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInUp {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+}
+
+
+
+
+/*
+ ######    ##     ##     ###     ##    ##   ########   
+##    ##   ##     ##    ## ##    ##   ##    ##         
+##         ##     ##   ##   ##   ##  ##     ##         
+ ######    #########  ##     ##  #####      ######     
+      ##   ##     ##  #########  ##  ##     ##         
+##    ##   ##     ##  ##     ##  ##   ##    ##         
+ ######    ##     ##  ##     ##  ##    ##   ########   
+*/
+
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-delay: 2s;
+  animation-delay: 3s;
+}
+
+
+/*
+########   ########   ##            ###     ##    ##   
+##     ##  ##         ##           ## ##     ##  ##    
+##     ##  ##         ##          ##   ##     ####     
+##     ##  ######     ##         ##     ##     ##      
+##     ##  ##         ##         #########     ##      
+##     ##  ##         ##         ##     ##     ##      
+########   ########   ########   ##     ##     ##      
+*/
+
+.delayPage  {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+
+#results-container [type="button"] {
+  margin-top: .7em;
+
+      border: none;
+      height: 50px;
+      color: #FFF;
+      background: #FFB03B;
+      font-size: 1.1em;
+      width: 100%;
+}
+
+
+#divCorrectAnswer {
+  display: none;
+}
+
+#pCorrectAnswer p {
+  display: none;
+  margin: 0 auto;
+}
+
+
+.formContainer {
+  position: relative;
+}
+
+.correct-answer {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 87%;
+  color: #fff;
+  font-size: 3em;
+  border-radius: 20px;
+}
+
+.correct-answer p {
+  margin-top: 50px;
+  margin-left: 25px;
+  text-align: center;
+  padding: 40px 20px;
+}

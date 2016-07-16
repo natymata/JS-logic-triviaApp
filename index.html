@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Natalie Mata Aaron Ulate">
+	<title>LaTrivia</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic|Abel|PT+Sans+Narrow|Ubuntu:300,400,500,500italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+		
+	<div id="main-container" class="main-content cf bounceInDown">
+		<h1>LaTrivia</h1>
+		
+		<div class="leftContent">
+			<div id="wellcome-content" class="welcomeContent">
+			
+				<label for="player-name">Ingrese su nombre:</label>
+				<input type= "text" id="player-name" placeholder="Nombre: Carlos" maxlength="15">
+				<input type="button" id="btnSendName" value="Enviar">
+				<p id="pError" class="nameError"></p>
+			</div><!--wellcome-content-->
+		
+			<div id="game-options" class="gameOptions">
+				<h3>Escoje un tema:</h3>
+				<input type="button" id="btnComput" value="Computación" name="tema" class="">
+				<input type="button" id="btnHistory" value="Historia" name="tema" class="">
+				<input type="button" id="btnGeneral" value="General" name="tema" class="">
+			</div><!--game-options-->
+			
+			<div id="question-options" class="questionOptions">
+				<h3>Número de preguntas:</h3>
+			
+				<input type="radio" id="btn5Quest" name="totalQuest" checked>
+				<label for="btn5Quest">5 Preguntas</label>
+			
+				<input type="radio" id="btn10Quest" name="totalQuest">
+				<label for="btn10Quest">10 Preguntas</label>
+			</div><!--question-options-->
+
+
+
+
+
+			
+
+		</div>
+
+	</div><!--main-container-->
+
+	<div id="form-header" class="formHeader"></div>
+
+	<div id="form-container" class="formContainer cf">
+		<form id="quest-form" class="questForm"></form>
+		<div id="divCorrectAnswer" class="correct-answer">    <!--nuevo-->
+			<p id="pCorrectAnswer"></p> <!--nuevo-->
+		</div><!--divCorrectAnswer-->   <!--nuevo-->
+	</div><!--form-container-->
+
+	<div id="results-container">
+		<p id="p-Result" class="pResult"></p>
+		<input type="button" id="recargar" value="Jugar de nuevo" class="volver">
+	</div><!--results-container-->
+
+
+
+<script type="text/javascript" src="logica/logica.js"></script>
+</body>
+</html>
